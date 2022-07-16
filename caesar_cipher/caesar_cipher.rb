@@ -20,7 +20,7 @@ end
 #   shift_factor: the amount of letters to shift the string by
 def caesar_cipher(stringArr, shift_factor)
     answer = []
-    for i in 0..stringArr.length - 1
+    for i in 0...stringArr.length
 
         value = stringArr[i].ord
 
