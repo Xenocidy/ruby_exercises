@@ -5,7 +5,7 @@ input = gets.chomp
 puts "Enter a shift factor"
 shift_factor = gets.chomp.to_i
 
-# validate shift_factor to be valid integer
+# Validate shift_factor to be valid integer
 while shift_factor == 0 
     puts "Enter a valid shift factor"
     shift_factor = gets.chomp.to_i
@@ -24,7 +24,7 @@ def caesar_cipher(stringArr, shift_factor)
 
         value = stringArr[i].ord
 
-        # Uppercase is between 65 and 90
+        # Uppercase letter is between 65 and 90
         if 65 <= value && value <= 90
 
             value += shift_factor
@@ -35,7 +35,7 @@ def caesar_cipher(stringArr, shift_factor)
 
             value = value.chr
 
-        # Lowercase is between 97 and 122
+        # Lowercase letter is between 97 and 122
         elsif 97 <= value && value <= 122
 
             value += shift_factor
